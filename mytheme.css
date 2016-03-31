@@ -138,6 +138,26 @@ code {
   float: right;
 }
 
+.left-column-large {
+  width: 65%;
+  float: left;
+}
+
+.right-column-small {
+  width: 30%;
+  float: right;
+}
+
+.left-column-small {
+  width: 30%;
+  float: left;
+}
+
+.right-column-large {
+  width: 65%;
+  float: right;
+}
+
 .footnote {
   position: absolute;
   bottom: 3em;
