@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>My first markdown-to-slides presentation</title>
+		<style>
+			/* COLOR PALETTE */
+
+:root {
+  --dark:   #0F2835;
+  --light:  #A0BAC9;
+  --gray:   #8593A8;
+  --green:  #009521;
+  --orange: #FF5206;
+  --red:    #D9001E;
+  --blue:   #1D69A8;
+  --white:  #FFFFFF;
+}
+
+/* LINKS */
+
+a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, a:focus {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline-offset: 0;
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* LISTS */
+
+ol {
+  padding: 0 0 0 1.5em;
+  margin: 1em 0;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 600px;
+  margin: 0 auto 1em;
+  display: block;
+}
+
+/* LINE */
+
+hr {
+  height: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid var(--light);
+}
+
+/* HEADERS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 1em 0 0.5em;
+  font-weight: bold;
+  text-shadow: var(--light) 1px 1px 2px;
+}
+
+.remark-slide-content h1 {
+  font-size: 56px;
+  color: var(--dark);
+}
+
+.remark-slide-content h2 {
+  font-size: 48px;
+  color: var(--blue);
+}
+
+.remark-slide-content h3 {
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.remark-slide-number {
+  color: var(--gray);
+}
+
+.remark-slide {
+  display: table;
+}
+
+.remark-slide-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 4em;
+  font-size: 24px;
+  color: var(--dark);
+  background-color: #FFFFFF;
+}
+
+.remark-slide-content >:first-child {
+  margin-top: 0;
+}
+
+.remark-slide-content >:last-child {
+  margin-bottom: 0;
+}
+
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+code {
+  border-radius: 5px;
+}
+
+/* COLUMNS */
+
+.left-column {
+  width: 45%;
+  float: left;
+}
+
+.right-column {
+  width: 45%;
+  float: right;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+}
+
+/* TO USE IN MARKDOWN AS EG. .red[red text] */
+
+.dark {
+  color: var(--dark);
+}
+
+.light {
+  color: var(--light);
+}
+
+.green {
+  color: var(--green);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.red {
+  color: var(--red);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.gray {
+  color: var(--gray);
+}
+/* HTML SETTINGS */
+
+html {
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #555555;
+  background-color: #FFFFFF;
+}
+
+/* OTHER */
+
+* {
+  .box-sizing(border-box);
+}
+
+*:before, *:after {
+  .box-sizing(border-box);
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+class: center, middle, main-title
+
+# My first markdown-to-slides presentation
+
+---
+## Is is that simple?
+
+1. first bullet point
+.red[- important subbullet]
+1. and some equation
+
+$$x^2 = \int_0^x ydy$$
+
+.footnote[.gray[*I like footnotes]]
+
+
+---
+## Two columns? Why not
+.left-column[
+You may want to use some colors, like .red[red], to highlight .blue[important stuff].
+Or even .orange[**bold some part of text**]. And sometime you want to provide a link to your source:
+
+Gif source = [link](http://theodysseyonline.com/portland-state/life-lessons-from-andy-dwyer/343455)
+
+]
+.right-column[
+![](andy.gif)
+]
+
+
+---
+## Some bash code
+```bash
+#!/bin/bash
+
+cd $HOME
+echo "I am at home!"
+```
+###Some C++ code
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    cout << "Hello World!\n";
+
+    return 0;
+}
+```
+
+---
+## References
+
+- Introduction to *remark*: http://remarkjs.com/
+- Introduction to *markdown-to-slides*: [md2slides](http://www.lendmeyourear.net/wp-content/uploads/markdown-remark-slides.html)
+- *Markdown* wiki: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+
+		</textarea>
+		<script src="http://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script><script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+<script type="text/javascript">
+
+  // Setup MathJax
+  MathJax.Hub.Config({
+      tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+  });
+  MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+          return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+  });
+
+  MathJax.Hub.Configured();
+</script>
+</script>
+	</body>
+</html>

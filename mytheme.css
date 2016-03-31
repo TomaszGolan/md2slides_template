@@ -1,0 +1,190 @@
+/* COLOR PALETTE */
+
+:root {
+  --dark:   #0F2835;
+  --light:  #A0BAC9;
+  --gray:   #8593A8;
+  --green:  #009521;
+  --orange: #FF5206;
+  --red:    #D9001E;
+  --blue:   #1D69A8;
+  --white:  #FFFFFF;
+}
+
+/* LINKS */
+
+a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, a:focus {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline-offset: 0;
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* LISTS */
+
+ol {
+  padding: 0 0 0 1.5em;
+  margin: 1em 0;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 600px;
+  margin: 0 auto 1em;
+  display: block;
+}
+
+/* LINE */
+
+hr {
+  height: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid var(--light);
+}
+
+/* HEADERS */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 1em 0 0.5em;
+  font-weight: bold;
+  text-shadow: var(--light) 1px 1px 2px;
+}
+
+.remark-slide-content h1 {
+  font-size: 56px;
+  color: var(--dark);
+}
+
+.remark-slide-content h2 {
+  font-size: 48px;
+  color: var(--blue);
+}
+
+.remark-slide-content h3 {
+  font-size: 40px;
+  color: var(--orange);
+}
+
+.remark-slide-number {
+  color: var(--gray);
+}
+
+.remark-slide {
+  display: table;
+}
+
+.remark-slide-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 4em;
+  font-size: 24px;
+  color: var(--dark);
+  background-color: #FFFFFF;
+}
+
+.remark-slide-content >:first-child {
+  margin-top: 0;
+}
+
+.remark-slide-content >:last-child {
+  margin-bottom: 0;
+}
+
+.remark-code {
+	display: block;
+	padding: 0.5em;
+}
+
+code {
+  border-radius: 5px;
+}
+
+/* COLUMNS */
+
+.left-column {
+  width: 45%;
+  float: left;
+}
+
+.right-column {
+  width: 45%;
+  float: right;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+}
+
+/* TO USE IN MARKDOWN AS EG. .red[red text] */
+
+.dark {
+  color: var(--dark);
+}
+
+.light {
+  color: var(--light);
+}
+
+.green {
+  color: var(--green);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.red {
+  color: var(--red);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.gray {
+  color: var(--gray);
+}
+/* HTML SETTINGS */
+
+html {
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #555555;
+  background-color: #FFFFFF;
+}
+
+/* OTHER */
+
+* {
+  .box-sizing(border-box);
+}
+
+*:before, *:after {
+  .box-sizing(border-box);
+}
