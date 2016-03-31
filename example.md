@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 ```
 
 ## References
- 
+
 - Introduction to *remark*: http://remarkjs.com/
 - Introduction to *markdown-to-slides*: [md2slides](http://www.lendmeyourear.net/wp-content/uploads/markdown-remark-slides.html)
 - *Markdown* wiki: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

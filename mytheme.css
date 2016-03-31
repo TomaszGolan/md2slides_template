@@ -1,3 +1,12 @@
+/* UNCOMMENT FOR PDF PRINTING */
+
+/*
+html.remark-container, body.remark-container {
+  width: 908px;
+  height: 681px;
+}
+*/
+
 /* COLOR PALETTE */
 
 :root {
